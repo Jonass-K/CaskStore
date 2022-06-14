@@ -13,5 +13,6 @@ struct CaskStore_AppApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowStyle(.hiddenTitleBar)
     }
 }

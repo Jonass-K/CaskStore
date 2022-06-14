@@ -6,11 +6,17 @@
 //
 
 import SwiftUI
-
+ 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        HStack {
+            SideBar()
+                .frame(width: 220.0, alignment: .leading)
+            Spacer()
+                .background(Color.background)
+        }
+        .frame(minWidth: 1000, idealWidth: 1000, minHeight: 600, idealHeight: 600, alignment: .center)
+        .ignoresSafeArea()
     }
 }
 

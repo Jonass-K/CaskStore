@@ -11,6 +11,10 @@
 		DDAD0B7A2821B419007A6219 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD0B792821B419007A6219 /* ContentView.swift */; };
 		DDAD0B7C2821B41A007A6219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAD0B7B2821B41A007A6219 /* Assets.xcassets */; };
 		DDAD0B7F2821B41A007A6219 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAD0B7E2821B41A007A6219 /* Preview Assets.xcassets */; };
+		DDAD0B8A2821B49B007A6219 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD0B892821B49B007A6219 /* Theme.swift */; };
+		DDAD0B8C2821B4C0007A6219 /* SideBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD0B8B2821B4C0007A6219 /* SideBarItem.swift */; };
+		DDAD0B8E2821B4D2007A6219 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD0B8D2821B4D2007A6219 /* SideBar.swift */; };
+		DDAD0B902821B4ED007A6219 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD0B8F2821B4ED007A6219 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		DDAD0B7B2821B41A007A6219 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDAD0B7E2821B41A007A6219 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DDAD0B802821B41A007A6219 /* CaskStore_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CaskStore_App.entitlements; sourceTree = "<group>"; };
+		DDAD0B892821B49B007A6219 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		DDAD0B8B2821B4C0007A6219 /* SideBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItem.swift; sourceTree = "<group>"; };
+		DDAD0B8D2821B4D2007A6219 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
+		DDAD0B8F2821B4ED007A6219 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +62,11 @@
 			children = (
 				DDAD0B772821B419007A6219 /* CaskStore_AppApp.swift */,
 				DDAD0B792821B419007A6219 /* ContentView.swift */,
+				DDAD0B892821B49B007A6219 /* Theme.swift */,
+				DDAD0B872821B467007A6219 /* Sidebar */,
+				DDAD0B7D2821B41A007A6219 /* Preview Content */,
 				DDAD0B7B2821B41A007A6219 /* Assets.xcassets */,
 				DDAD0B802821B41A007A6219 /* CaskStore_App.entitlements */,
-				DDAD0B7D2821B41A007A6219 /* Preview Content */,
 			);
 			path = CaskStore_App;
 			sourceTree = "<group>";
@@ -67,6 +77,16 @@
 				DDAD0B7E2821B41A007A6219 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDAD0B872821B467007A6219 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				DDAD0B8D2821B4D2007A6219 /* SideBar.swift */,
+				DDAD0B8B2821B4C0007A6219 /* SideBarItem.swift */,
+				DDAD0B8F2821B4ED007A6219 /* SearchBar.swift */,
+			);
+			path = Sidebar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +105,8 @@
 			dependencies = (
 			);
 			name = CaskStore_App;
+			packageProductDependencies = (
+			);
 			productName = CaskStore_App;
 			productReference = DDAD0B742821B419007A6219 /* CaskStore_App.app */;
 			productType = "com.apple.product-type.application";
@@ -97,7 +119,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1310;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					DDAD0B732821B419007A6219 = {
 						CreatedOnToolsVersion = 13.1;
@@ -113,6 +135,8 @@
 				Base,
 			);
 			mainGroup = DDAD0B6B2821B419007A6219;
+			packageReferences = (
+			);
 			productRefGroup = DDAD0B752821B419007A6219 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAD0B8E2821B4D2007A6219 /* SideBar.swift in Sources */,
+				DDAD0B8A2821B49B007A6219 /* Theme.swift in Sources */,
+				DDAD0B8C2821B4C0007A6219 /* SideBarItem.swift in Sources */,
 				DDAD0B7A2821B419007A6219 /* ContentView.swift in Sources */,
 				DDAD0B782821B419007A6219 /* CaskStore_AppApp.swift in Sources */,
+				DDAD0B902821B4ED007A6219 /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +296,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CaskStore_App/CaskStore_App.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -295,6 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = CaskStore_App/CaskStore_App.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
