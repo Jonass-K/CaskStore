@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD2240A228747DD000B0B99B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2240A128747DD000B0B99B /* SearchView.swift */; };
+		DD2240A428748BBB00B0B99B /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2240A328748BBB00B0B99B /* SearchResult.swift */; };
+		DD2240A628748CFE00B0B99B /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2240A528748CFE00B0B99B /* Grid.swift */; };
 		DDAD0B782821B419007A6219 /* CaskStore_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD0B772821B419007A6219 /* CaskStore_AppApp.swift */; };
 		DDAD0B7A2821B419007A6219 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD0B792821B419007A6219 /* ContentView.swift */; };
 		DDAD0B7C2821B41A007A6219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAD0B7B2821B41A007A6219 /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD2240A128747DD000B0B99B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		DD2240A328748BBB00B0B99B /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		DD2240A528748CFE00B0B99B /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		DDAD0B742821B419007A6219 /* CaskStore_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaskStore_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAD0B772821B419007A6219 /* CaskStore_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaskStore_AppApp.swift; sourceTree = "<group>"; };
 		DDAD0B792821B419007A6219 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD2240A82878545900B0B99B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DD2240A328748BBB00B0B99B /* SearchResult.swift */,
+				DD2240A128747DD000B0B99B /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		DDAD0B6B2821B419007A6219 = {
 			isa = PBXGroup;
 			children = (
@@ -62,7 +77,9 @@
 			children = (
 				DDAD0B772821B419007A6219 /* CaskStore_AppApp.swift */,
 				DDAD0B792821B419007A6219 /* ContentView.swift */,
+				DD2240A528748CFE00B0B99B /* Grid.swift */,
 				DDAD0B892821B49B007A6219 /* Theme.swift */,
+				DD2240A82878545900B0B99B /* Search */,
 				DDAD0B872821B467007A6219 /* Sidebar */,
 				DDAD0B7D2821B41A007A6219 /* Preview Content */,
 				DDAD0B7B2821B41A007A6219 /* Assets.xcassets */,
@@ -165,10 +182,13 @@
 			files = (
 				DDAD0B8E2821B4D2007A6219 /* SideBar.swift in Sources */,
 				DDAD0B8A2821B49B007A6219 /* Theme.swift in Sources */,
+				DD2240A428748BBB00B0B99B /* SearchResult.swift in Sources */,
 				DDAD0B8C2821B4C0007A6219 /* SideBarItem.swift in Sources */,
+				DD2240A228747DD000B0B99B /* SearchView.swift in Sources */,
 				DDAD0B7A2821B419007A6219 /* ContentView.swift in Sources */,
 				DDAD0B782821B419007A6219 /* CaskStore_AppApp.swift in Sources */,
 				DDAD0B902821B4ED007A6219 /* SearchBar.swift in Sources */,
+				DD2240A628748CFE00B0B99B /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +325,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CaskStore-App-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -333,6 +354,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CaskStore-App-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -17,6 +17,9 @@ struct SideBar: View {
         VStack(alignment: .leading, spacing: 0) {
             SearchBar(text: $query)
                 .padding(.bottom, 20.0)
+                .onSubmit {
+                    item = nil
+                }
             
             SideBarItem(item: .entdecken, icon: "star", selected: $item)
             SideBarItem(item: .erstellen, icon: "paintbrush", selected: $item)
